@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.8.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+<div id="vis"></div>
+<script type="text/javascript">
+  const spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-0c4302a2694e821f62e3a1196e967a25"}, "mark": {"type": "boxplot", "size": 100}, "encoding": {"x": {"type": "nominal", "field": "Model"}, "y": {"type": "quantitative", "axis": {"title": "Accuracy (R^2)"}, "field": "test_acc", "scale": {"domain": [0.56, 0.65]}}}, "height": 400, "title": "Accuracy per Model", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-0c4302a2694e821f62e3a1196e967a25": [{"Model": "Linear Regression", "test_acc": 0.6134393559050665}, {"Model": "Decision Tree Regression", "test_acc": 0.5620623777099423}, {"Model": "Neural Network", "test_acc": 0.637421284781704}, {"Model": "Linear Regression", "test_acc": 0.610193032108042}, {"Model": "Decision Tree Regression", "test_acc": 0.5726368892650727}, {"Model": "Neural Network", "test_acc": 0.6298708839015018}, {"Model": "Linear Regression", "test_acc": 0.6117871089522201}, {"Model": "Decision Tree Regression", "test_acc": 0.5666751233917006}, {"Model": "Neural Network", "test_acc": 0.6306668367045198}, {"Model": "Linear Regression", "test_acc": 0.6157058138366236}, {"Model": "Decision Tree Regression", "test_acc": 0.5690141270548287}, {"Model": "Neural Network", "test_acc": 0.6100082345036246}, {"Model": "Linear Regression", "test_acc": 0.6061845908548927}, {"Model": "Decision Tree Regression", "test_acc": 0.5726977766523729}, {"Model": "Neural Network", "test_acc": 0.6415067605430899}, {"Model": "Linear Regression", "test_acc": 0.613076083726864}, {"Model": "Decision Tree Regression", "test_acc": 0.5707795773136191}, {"Model": "Neural Network", "test_acc": 0.6196353749580881}, {"Model": "Linear Regression", "test_acc": 0.6054053630551371}, {"Model": "Decision Tree Regression", "test_acc": 0.582078770450908}, {"Model": "Neural Network", "test_acc": 0.6162450299445528}, {"Model": "Linear Regression", "test_acc": 0.604135760325696}, {"Model": "Decision Tree Regression", "test_acc": 0.5705279430492433}, {"Model": "Neural Network", "test_acc": 0.6316020750397923}, {"Model": "Linear Regression", "test_acc": 0.5994908102576292}, {"Model": "Decision Tree Regression", "test_acc": 0.5751920595620112}, {"Model": "Neural Network", "test_acc": 0.6310557431776238}, {"Model": "Linear Regression", "test_acc": 0.6121945122451238}, {"Model": "Decision Tree Regression", "test_acc": 0.5768583738113845}, {"Model": "Neural Network", "test_acc": 0.6334648021310525}]}};
+  const embedOpt = {};
+  vegaEmbed('#vis', spec, embedOpt).catch(console.error);
+</script>
+</body>
+</html>
