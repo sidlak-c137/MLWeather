@@ -67,5 +67,7 @@ This will verify the implementation of the WeatherModels class.
 
 ## Extra files
 Attached with the program are some sample files:
+
 data.csv is an already-parsed file of weather data from 1950 to August 2020. Re-run the program for a more updated dataset (if necessary). File is enclosed to save time on the data collection process.
+
 sample.csv is a mini-version of the full dataset, that can be used to tweak and tune values. 
